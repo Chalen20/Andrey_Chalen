@@ -1,0 +1,15 @@
+header{
+    min-height:150px;
+    overflow: hidden;
+    position: relative;
+    padding: 15px;
+}
+header .logo{
+    display: block;
+    max-width: 150px;
+    width: 100%;
+    float: left;
+}
+.logo img{
+    width: 100%
+}

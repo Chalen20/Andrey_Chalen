@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    {% load staticfiles %}
+    <link rel="stylesheet" href="{% static "css/style.css" %}"  type="text/css">
+    <script src="{% static "js/jquery-3.2.1.min.js" %}"></script>
+</head>
+<body>
+<header>
+    <div>
+        <div>
+         {% load static %}
+            <img src="{% static "img/Menu-512.png" %}" alt="Menu" class="menu" id="h">
+        </div>
+    <a class="menu1">
+        <button class="button1">
+            set in
+        </button>
+    </a>
+     <a class="menu2">
+         <button class="button2">
+             set up
+         </button>
+     </a>
+     <div id="f"></div>
+       <nav>
+           <ul class="topmenu">
+               <li>
+                   <a href="">
+                       Home
+                   </a>
+               </li>
+               <li>
+                   <a href="">
+                       Shop
+                   </a>
+               </li>
+               <li>
+                   <a href="" class="down">
+                       Blog
+                   </a>
+                   <ul class="submenu">
+                       <li>
+                           <a href="">
+                               Category
+                           </a>
+                       </li>
+                       <li>
+                           <a href="">
+                               Author
+                           </a>
+                       </li>
+                       <li>
+                           <a href="">
+                               Archive
+                           </a>
+                       </li>
+                       <li>
+                           <a href="">
+                               Tags
+                           </a>
+                       </li>
+                   </ul>
+               </li>
+               <li>
+                   <a href="" class="down">
+                       Portfolio
+                   </a>
+                   <ul class="submenu">
+                       <li>
+                           <a href="">
+                               Category
+                           </a>
+                       </li>
+                       <li>
+                           <a href="">
+                               Author
+                           </a>
+                       </li>
+                       <li>
+                           <a href="">
+                               Archive
+                           </a>
+                       </li>
+                       <li>
+                           <a href="">
+                               Tags
+                           </a>
+                       </li>
+                   </ul>
+               </li>
+               <li>
+                   <a href="">
+                       Contact
+                   </a>
+               </li>
+           </ul>
+       </nav>
+    </div>
+    <div class="head_content">
+        {% load static %}
+        <a href="/" class="logo">
+            <img src="{% static "img/1477128283192211030.png" %}" alt="Django logo">
+        </a>
+    </div>
+</header>
+<div class="rblock">
+    <form>
+        <p class="pform">
+            set in
+        </p>
+        <input maxlength="40" placeholder="Login" type="text" class="login">
+        <input maxlength="40" placeholder="Password" type="password" class="login">
+        <p class="pform">
+            <a>
+                forgot a password
+            </a>
+        </p>
+        <p class=" pform ">
+            <input type="checkbox">another's computer
+        </p>
+    </form>
+</div>
+<div class="mainblock">
+    <p class="pesh">
+        hackerblin
+        4om2klan
+    </p>
+</div>
+<footer>
+    <div class="col-lg-4 list-style-none mr-lg-5">
+        <a aria-label="Homepage" title="GitHub" class="d-none d-lg-flex footer-octicon footer-octicon no-underline" href="https://github.com">
+            <div>
+                <svg height="24" class="octicon octicon-mark-github d-block mr-2 float-left" viewBox="0 0 16 16" version="1.1" width="24" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg>
+            </div>
+            <div>
+                <span class="f6 text-gray-light">
+                    © 2019
+                    <span title="0.27936s from unicorn-78944dc684-rj2zs">
+                        Chalen</span>
+                    , Inc.
+                </span>
+                <span class="f6 text-gray-light">
+                </span>
+            </div>
+        </a>
+        <div class="d-flex flex-justify-start flex-row width-full">
+            <ul class="col-4 col-sm-4 col-lg-4 col-xl-3 list-style-none f6 text-gray pl-lg-4">
+                <li class="mb-1">
+                    <a class="link-gray" href="https://github.blog" data-ga-click="Footer, go to blog, text:blog">
+                        Blog
+                    </a>
+                </li>
+                <li class="mb-1">
+                    <a class="link-gray" data-ga-click="Footer, go to about, text:about" href="https://github.com/about">
+                        About
+                    </a>
+                </li>
+                <li class="mb-1">
+                    <a class="link-gray" href="https://shop.github.com" data-ga-click="Footer, go to shop, text:shop">
+                        Shop
+                    </a>
+                </li>
+                <li class="mb-1">
+                    <a class="link-gray" data-ga-click="Footer, go to contact, text:contact" href="https://github.com/contact">
+                        Contact
+                    </a>
+                </li>
+                <li class="mb-1">
+                    <a href="/pricing" data-ga-click="Footer, go to Pricing, text:Pricing" class="link-gray">
+                        Pricing
+                    </a>
+                </li>
+            </ul>
+            <ul class="col-4 col-sm-4 col-lg-4 col-xl-3 list-style-none f6 text-gray pl-lg-4">
+                <li class="mb-1">
+                    <a class="link-gray" href="https://developer.github.com" data-ga-click="Footer, go to api, text:api">
+                        API
+                    </a>
+                </li>
+                <li class="mb-1">
+                    <a class="link-gray" href="https://training.github.com" data-ga-click="Footer, go to training, text:training">
+                        Training
+                    </a>
+                </li>
+                <li class="mb-1">
+                    <a class="link-gray" href="https://githubstatus.com/" data-ga-click="Footer, go to status, text:status">
+                        Status
+                    </a>
+                </li>
+                <li class="mb-1">
+                    <a class="link-gray" href="https://help.github.com/articles/github-security/" data-ga-click="Footer, go to security, text:security">
+                        Security
+                    </a>
+                </li>
+            </ul>
+            <ul class="col-4 col-sm-4 col-lg-4 col-xl-3 list-style-none f6 text-gray pl-lg-4">
+                <li class="mb-1">
+                    <a class="link-gray" data-ga-click="Footer, go to terms, text:terms" href="https://github.com/site/terms">
+                        Terms
+                    </a>
+                </li>
+                <li class="mb-1">
+                    <a class="link-gray" data-ga-click="Footer, go to privacy, text:privacy" href="https://github.com/site/privacy">
+                        Privacy
+                    </a>
+                </li>
+                <li class="mb-1">
+                    <a class="link-gray" data-ga-click="Footer, go to help, text:help" href="https://help.github.com">
+                        Help
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</footer>
+</body>
+<script src="{% static "js/show.js" %}"></script>
+</html>

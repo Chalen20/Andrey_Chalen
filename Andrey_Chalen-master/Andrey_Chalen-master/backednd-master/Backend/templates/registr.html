@@ -1,0 +1,39 @@
+
+{% extends "wrapper.html" %}
+{% block nar %}
+{% load staticfiles %}
+<div class="main">
+    <div class="content5">
+        <p style="font-size: 30px;  font-family: 'Snell Roundhand', cursive; text-align: center">
+            Продовжити реєстрацію
+        </p>
+        <form>
+            <input type="text" name="name" maxlength="50" placeholder="Ваше імя" class="log1" id="log11">
+            <input type="text" name="last_name" maxlength="50" placeholder="Ваше прізвище" class="log1">
+            <div class="h">
+                Це поле не обовязкове,але заповнена дата нарадження допоможе друзям легше знайти вас
+            </div>
+            <p style="padding: 5% 0 0 10%">
+                Дата народження:
+                <img src="{% static 'img/1200px-Question_mark.svg.png' %}" alt="Знак питання" class="znak">
+            </p>
+            <input type="date" id="date" name="date" class="log1">
+            <p>
+                <input type="radio" name="gender" class="log2">Чол
+                <input type="radio" name="gender" class="log2">Жін
+            </p>
+            <input type="email" class="log1" placeholder="Email">
+            <input type="text" name="login" maxlength="50" placeholder="Login" class="log1">
+            <br>
+            <input type="password" name="password" maxlength="50" placeholder="Password" class="log1">
+            <br>
+            <p style="text-align: center; margin-top: 25px">
+                <button class="vhod3">
+                    Зареєструватися
+                </button>
+            </p>
+
+        </form>
+    </div>
+</div>
+{% endblock %}

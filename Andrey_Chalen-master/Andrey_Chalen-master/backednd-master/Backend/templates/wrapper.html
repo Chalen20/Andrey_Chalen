@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    {% load staticfiles %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}"  type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="{% static 'js/jquery-3.2.1.min.js' %}"></script>
+
+</head>
+<body id="body" class="body" style="padding: 0 5% 0 5%">
+<header>
+    <div class="head">
+        <div>
+            <a class="menu" id="h">
+                <img src="{% static 'img/Menu-512.png' %}" alt="menu" class="menu">
+            </a>
+            <div class="namepages">
+                <p class="namepage">
+                    Ц.укр
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="head_content">
+        <!--{% load static %}-->
+        <a href="/" class="logo">
+            <img src="{% static 'img/1477128283192211030.png' %}" alt=" logo">
+        </a>
+    </div>
+</header>
+<div id="f">
+    <p style="text-align: center; font-size: 20px; font-family: 'Snell Roundhand', cursive;">
+        Панель інструментів
+    </p>
+    <script src="{% static 'js/jscolor.js' %}"></script>
+
+	<button class="jscolor {valueElement:'chosen-value', onFineChange:'setTextColor(this)'}">
+		Pick text color
+	</button>
+
+	HEX value: <input id="chosen-value" value="000000">
+    <input class="jscolor" onchange="update1(this.jscolor)" value="cc66ff">
+    <input class="jscolor {onFineChange:'update(this)'}" value="cc66ff">
+    <script>
+    function update(jscolor) {
+    document.getElementById('f').style.backgroundColor = '#' + jscolor;
+    }
+    </script>
+    <script>
+    function update1(jscolor) {
+    document.getElementById('body').style.backgroundColor = '#' + jscolor;
+    $('#body').removeClass("body")}
+    </script>
+	<script>
+	function setTextColor(picker) {
+		document.getElementsByTagName('body')[0].style.color = '#' + picker.toString()
+	}
+	</script>
+</div>
+{% block nar %}
+<div class="main">
+    <div class="content1">
+    </div>
+    <div class="content2">
+        <form id="form">
+            <input type="text" name="login" maxlength="50" placeholder="Login" class="log">
+            <br>
+            <input type="password" name="password" maxlength="50" placeholder="Password" class="log">
+            <br>
+            <a href="admin/">
+                <button form="form" class="vhod">
+                    Увійти
+                </button>
+            </a>
+            <a href="{% url 'reset' %}">
+                Забули пароль?
+            </a>
+        </form>
+
+    </div>
+    <div class="content3">
+        <form>
+            <p style="font-size:14px; font-family: 'Snell Roundhand', cursive; text-align: center">
+                Реєстрація
+            </p>
+            <input type="text" name="name" maxlength="50" placeholder="Ваше імя" class="log" id="log1">
+            <input type="text" name="last_name" maxlength="50" placeholder="Ваше прізвище" class="log">
+            <div class="h">
+                Це поле не обовязкове,але заповнена дата нарадження допоможе друзям легше знайти вас
+            </div>
+            <p style="padding: 5% 0 0 10%">
+                Дата народження:
+                <img src="{% static 'img/1200px-Question_mark.svg.png' %}" alt="Знак питання" class="znak">
+            </p>
+            <input type="date" id="date" name="date" class="log">
+
+        </form>
+        <a href="{% url 'registr'%}" class="vhod_a">
+                <button class="vhod1" >
+                    Продолжить регистрацию
+                </button>
+            </a>
+    </div>
+    <div class="content4">
+    </div>
+</div>
+{% endblock %}
+<footer>
+    <div class="col-lg-4 list-style-none mr-lg-5">
+        <a aria-label="Homepage" title="GitHub" class="d-none d-lg-flex footer-octicon footer-octicon no-underline">
+            <div>
+                <svg height="24" class="octicon octicon-mark-github d-block mr-2 float-left" viewBox="0 0 16 16" version="1.1" width="24" aria-hidden="true">
+                <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z">
+                </path>
+                </svg>
+            </div>
+            <div>
+                <span class="f6 text-gray-light" style="color: white">
+                    © 2019
+                    <span title="0.27936s from unicorn-78944dc684-rj2zs">
+                        Chalen</span>
+                    , Inc.
+                </span>
+                <span class="f6 text-gray-light">
+                </span>
+            </div>
+        </a>
+        <div class="d-flex flex-justify-start flex-row width-full">
+            <ul class="col-4 col-sm-4 col-lg-4 col-xl-3 list-style-none f6 text-gray pl-lg-4">
+                <li class="mb-1">
+                    <a class="link-gray" data-ga-click="Footer, go to blog, text:blog" href="{% url 'about' %}">
+                        Про компанію
+                    </a>
+                </li>
+                <li class="mb-1">
+                    <a class="link-gray" data-ga-click="Footer, go to about, text:about" href="{% url 'about' %}">
+                        About
+                    </a>
+                </li>
+                <li class="mb-1">
+                    <a class="link-gray" data-ga-click="Footer, go to contact, text:contact" href="{% url 'about' %}">
+                        Contact
+                    </a>
+                </li>
+                <li class="mb-1">
+                    <a data-ga-click="Footer, go to Pricing, text:Pricing" class="link-gray" href="{% url 'rules' %}">
+                        Правила
+                    </a>
+                </li>
+            </ul>
+            <ul class="col-4 col-sm-4 col-lg-4 col-xl-3 list-style-none f6 text-gray pl-lg-4">
+                <li class="mb-1">
+                    <a class="link-gray" data-ga-click="Footer, go to api, text:api" href="{% url 'advertice' %}">
+                        Реклама
+                    </a>
+                </li>
+                <li class="mb-1">
+                    <a class="link-gray"  data-ga-click="Footer, go to training, text:training" href="{% url 'developer' %}">
+                        Разроботчикам
+                    </a>
+                </li>
+                <li class="mb-1">
+                    <a class="link-gray"  data-ga-click="Footer, go to status, text:status" href="{% url 'developer' %}">
+                        Status
+                    </a>
+                </li>
+                <li class="mb-1">
+                    <a class="link-gray" data-ga-click="Footer, go to security, text:security" href="{% url 'rules' %}">
+                        Security
+                    </a>
+                </li>
+            </ul>
+            <ul class="col-4 col-sm-4 col-lg-4 col-xl-3 list-style-none f6 text-gray pl-lg-4">
+                <li class="mb-1">
+                    <a class="link-gray" data-ga-click="Footer, go to terms, text:terms" href="{% url 'developer' %}">
+                        Terms
+                    </a>
+                </li>
+                <li class="mb-1">
+                    <a class="link-gray" data-ga-click="Footer, go to privacy, text:privacy" href="{% url 'rules' %}" >
+                        Privacy
+                    </a>
+                </li>
+                <li class="mb-1">
+                    <a class="link-gray" data-ga-click="Footer, go to help, text:help" href="{% url 'rules' %}">
+                        Help
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</footer>
+</body>
+<script src="{% static 'js/show.js' %}"></script>
+</html>

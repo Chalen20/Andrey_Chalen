@@ -1,0 +1,23 @@
+{% extends "wrapper.html" %}
+{% block nar %}
+{% load staticfiles %}
+<div class="main">
+    <div class="content5" style="padding: 5%">
+         <p style="font-size: 30px;  font-family: 'Snell Roundhand', cursive; text-align: center">
+            Відновити пароль
+        </p>
+        <form>
+            <input type="text" placeholder="Введіть код, який ми вислали" maxlength="15" class="log1" id="bd">
+             <p style="text-align: center; margin-top: 25px">
+
+                     <input class="vhod3" id="button" type="button"  readonly>
+
+             </p>
+            <p style="font-size: 18px;  font-family: 'Snell Roundhand', cursive; text-align: center">
+                Будьте обачні, перевіряйте свої дані
+            </p>
+            <img src="{% static 'img/search-engine-optimisation1.jpg' %}" alt="Будьте обачні, перевіряйте свої дані" style="width: 100%; height: 445px">
+        </form>
+           </div>
+</div>
+{% endblock %}

@@ -1,5 +1,5 @@
 header{
-    min-height:150px;
+    min-height: 40px;
     overflow: hidden;
     position: relative;
     padding: 15px;
@@ -7,9 +7,254 @@ header{
 header .logo{
     display: block;
     max-width: 150px;
-    width: 100%;
+    width: 15%;
     float: left;
+    position: fixed;
+    margin: 0 0 0 0
 }
 .logo img{
-    width: 100%
+    width: 15%;
+    position: fixed;
+}
+.header{
+    width: 100%;
+    height: 50px;
+    background-color: darkblue;
+}
+.body{
+    padding: 0 5% 0 5%;
+    background: linear-gradient(to top, darkblue, lightblue);
+    height: 100%;
+    position: relative;
+}
+.body {
+  margin: 0;
+  height: 100%;
+  position: relative;
+}
+body:before {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(45deg, rgba(0,0,0,0), rgba(255,255,255,.8));
+}
+.pesh{
+    margin: 0;
+    padding: 0;
+    z-index: -40
+}
+.list-style-none {
+    list-style: none!important;
+}
+.octicon {
+    vertical-align: text-bottom;
+}
+.octicon {
+    display: inline-block;
+    fill: currentColor;
+    vertical-align: text-top;
+}
+.f6 {
+    font-size: 12px!important;
+}
+.text-gray {
+    color: #586069!important;
+}
+@media (min-width: 544px)
+.col-sm-4 {
+    width: 33.33333%;
+}
+.col-4 {
+    width: 33.33333%;
+}
+.mb-1 {
+    margin-bottom: 4px!important;
+}
+.link-gray {
+    color: #586069!important;
+}
+.page-responsive .footer .footer-octicon {
+    display: none;
+}
+.footer-octicon {
+    color: #c6cbd1;
+}
+.d-none {
+    display: none!important;
+}
+.no-underline {
+    text-decoration: none!important;
+}
+svg:not(:root) {
+    overflow: hidden;
+}
+.d-block {
+    display: block!important;
+}
+.mr-2 {
+    margin-right: 8px!important;
+}
+.float-left {
+    float: left!important;
+}
+.d-flex {
+    display: flex!important;
+}
+.width-full {
+    width: 100%!important;
+}
+.flex-justify-start {
+    justify-content: flex-start!important;
+}
+.flex-row {
+    flex-direction: row!important;
+}
+footer{
+background: black;
+width:100%;
+}
+.head{
+    background: #4a76a8;
+    color: white;
+    width: 100%;
+    height: 40px;
+    padding: 0 20% 0 20%;
+}
+.menu{
+    width: 39px;
+    height: 39px;
+    float: right;
+    border: white 1px solid;
+}
+.namepage{
+    width: 100%;
+    height: 100%;
+    padding: 5px 0 5px 0;
+    font-size: 20px;
+    font-family: "Mistral", cursive;
+    margin: 0;
+}
+.namepages{
+    width: 10%;
+    height: 100%;
+}
+.main{
+    width: 100%;
+    height: 850px;
+    padding: 0 20% 0 20%;
+}
+.content1{
+    width: 70%;
+    height: 600px;
+    background: whitesmoke;
+    padding: 5px;
+    float: left;
+}
+.content2{
+    width: 27%;
+    height: 200px;
+    background: whitesmoke;
+    padding: 5px;
+    float: right;
+    margin: 0 0 0 5px;
+}
+.content3{
+    width: 27%;
+    height: 400px;
+    background: whitesmoke;
+    padding: 5px;
+    float: right;
+    margin: 25px 0 0 5px;
+}
+.content4{
+    width: 70%;
+    height: 200px;
+    background: whitesmoke;
+    padding: 5px;
+    float: left;
+    margin: 25px 0 0 0;
+}
+.log{
+    width: 80%;
+    height: 40px;
+    border-radius: 4%;
+    padding: 5%;
+    margin: 10% 10% 0 10% ;
+}
+.log1{
+    width: 50%;
+    height: 40px;
+    border-radius: 4%;
+    padding: 3px;
+    margin: 4% 25% 0 25% ;
+}
+.log2{
+    width: 15px;
+    height: 15px;
+    margin: 3% 0 0 30%;
+}
+.vhod{
+    background: #4a76a8;
+    color: white;
+    text-align: center;
+    margin: 10% 5% 0 10%;
+    border-radius: 15%;
+    text-decoration: none;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+.vhod1{
+    background: #4a76a8;
+    color: white;
+    text-align: center;
+    margin: 10% 5% 0 10%;
+    height: 50px;
+    text-decoration: none;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+.vhod3{
+    background: #4a76a8;
+    color: white;
+    text-align: center;
+    height: 50px;
+    text-decoration: none;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+.znak{
+    width: 10px;
+    height: 15px;
+}
+.h{
+    width: 170px;
+    height: 170px;
+    background: lightyellow;
+    position:absolute;
+    border-radius: 15%;
+    margin: 0 0 0 15% ;
+    padding: 1%;
+    display: none;
+}
+#f{
+    position: absolute;
+    width: 90%;
+    height: 500px;
+    background: white;
+    display: none;
+    z-index: 100;
+    padding: 0;
+    margin: 0;
+}
+.content5{
+    width: 100%;
+    height: 800px;
+    background: whitesmoke;
+    padding: 5px;
+    float: left;
+}
+.content6{
+    width: 25%;
+    height: 300px;
+    background: whitesmoke;
+    padding: 5%;
 }
